@@ -10,7 +10,7 @@ import lombok.extern.java.Log;
 @Service
 public class listenGroupEvent {
 	
-	@KafkaListener(topics = "events", groupId = "kafkatool-group")
+	@KafkaListener(topics = "events", groupId = "kafkatool-group_indra")
 	public void listenGroupFoo(String message) {
 	    log.info("Received Message in group kafkatool-group: " + message);
 	}
